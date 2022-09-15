@@ -1,0 +1,41 @@
+.containerMap{
+    display: grid;
+    position: absolute;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:repeat(auto-fill, 40%);    
+}
+.imgCard{
+    width: 100%;
+    height: 200;
+    background-color: brown;
+    margin: 0;
+    
+}
+.containerCard{
+    width: 90%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerMap h1{
+    color: white;
+    font-size:20px ;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .containerMap{
+        grid-template-columns:repeat(auto-fill, 100%);
+        margin: 10px;    
+        justify-content: space-around ;
+    }
+}

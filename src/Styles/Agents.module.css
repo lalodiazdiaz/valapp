@@ -1,0 +1,35 @@
+.containerAgents{
+    display: grid;
+    position: absolute;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns:repeat(auto-fill, 30%);    
+}
+.imgCard{
+    width: 100%;
+    background-color: brown;
+    margin: 0;
+}
+.containerCard{
+    width: 80%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.containerAgents h1{
+    color: white;
+    font-size:20px ;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .containerAgents{
+        grid-template-columns:repeat(auto-fill, 40%);
+        margin: 10px;    
+        justify-content: space-around ;
+    }
+}
